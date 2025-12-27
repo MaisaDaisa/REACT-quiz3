@@ -1,11 +1,11 @@
-import iphoneImage from '../../../assets/iphone.png';
+import programImage from '../../../assets/program.png';
 
 const HeroImage = () => {
     return (
-        <div className="mt-16 flex w-90 justify-center">
+        <div className="mt-16 flex justify-center">
             <img
-                src={iphoneImage}
-                alt="iPhone 12"
+                src={programImage}
+                alt="BTU program for IT"
                 className="w-full max-w-5xl"
             />
         </div>

@@ -21,8 +21,9 @@ const Header = () => {
                         Students
                     </Link>
                 </nav>
-
-                <Button>Apply</Button>
+                <Link to={'https://btu.edu.ge/en/home-english/'}>
+                    <Button>Apply</Button>
+                </Link>
             </div>
         </header>
     );
