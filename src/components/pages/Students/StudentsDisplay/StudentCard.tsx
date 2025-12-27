@@ -35,11 +35,11 @@ const StudentCard = ({
             </div>
             <div className="flex flex-col items-start gap-1 space-y-2 text-sm text-gray-600">
                 <p>
-                    <span className="font-medium text-gray-900">Email:</span>
+                    <span className="font-medium text-gray-900">Email:</span>{' '}
                     {email}
                 </p>
                 <p>
-                    <span className="font-medium text-gray-900">Phone:</span>
+                    <span className="font-medium text-gray-900">Phone:</span>{' '}
                     {phone}
                 </p>
             </div>
