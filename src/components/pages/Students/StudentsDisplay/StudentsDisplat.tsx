@@ -26,20 +26,21 @@ export const StudentsDisplat = () => {
     }, []);
     return (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {users.map((user) => {
-                const [firstName, lastName = ''] = user.name.split(' ');
+            {!loading &&
+                users.map((user) => {
+                    const [firstName, lastName = ''] = user.name.split(' ');
 
-                return (
-                    <StudentCard
-                        key={user.id}
-                        firstName={firstName}
-                        lastName={lastName}
-                        email={user.email}
-                        phone={user.phone}
-                        city={user.address.city}
-                    />
-                );
-            })}
+                    return (
+                        <StudentCard
+                            key={user.id}
+                            firstName={firstName}
+                            lastName={lastName}
+                            email={user.email}
+                            phone={user.phone}
+                            city={user.address.city}
+                        />
+                    );
+                })}
         </div>
     );
 };
