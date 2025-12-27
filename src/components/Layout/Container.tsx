@@ -1,9 +1,7 @@
-import { Outlet } from 'react-router';
+import type { PropsWithChildren } from 'react';
 
-const Container = () => (
-    <div className="mx-auto max-w-7xl px-6 pt-20 text-center">
-        <Outlet />
-    </div>
+const Container: React.FC<PropsWithChildren> = ({ children }) => (
+    <div className="mx-auto max-w-7xl px-6 py-20 text-center">{children}</div>
 );
 
 export default Container;
