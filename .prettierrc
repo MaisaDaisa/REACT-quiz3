@@ -9,6 +9,6 @@
         "prettier-plugin-tailwindcss"
     ],
     "tailwindFunctions": ["clsx", "cn"],
-    "tailwindStylesheet": "src/App.css",
+    "tailwindStylesheet": "src/index.css",
     "tabWidth": 4
 }

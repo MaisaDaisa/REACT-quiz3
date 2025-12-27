@@ -1,9 +1,9 @@
-type Props = {
-    children: React.ReactNode;
-};
+import { Outlet } from 'react-router';
 
-const Container = ({ children }: Props) => (
-    <div className="mx-auto max-w-7xl px-6 text-center">{children}</div>
+const Container = () => (
+    <div className="mx-auto max-w-7xl px-6 text-center">
+        <Outlet />
+    </div>
 );
 
 export default Container;
