@@ -3,8 +3,8 @@ import Button from '../../common/Button';
 
 const HeroButton = () => {
     return (
-        <Link to={'https://btu.edu.ge/en/home-english/'} className="mt-6">
-            <Button>Go to BTU</Button>
+        <Link to={'/students'} className="mt-6">
+            <Button>See Students</Button>
         </Link>
     );
 };
